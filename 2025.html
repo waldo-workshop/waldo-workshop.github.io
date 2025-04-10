@@ -207,10 +207,16 @@
 <div class="row my-3">
 <div class="col-2">12:05pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://cs.nyu.edu/~anupamg/">Anupam Gupta</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://cs.nyu.edu/~anupamg/">Anupam Gupta</a>: The Price of Explainability for Clustering</span>
 [<a href="javascript:toggle('AG')">Abstract</a>]
 <div id="AG" style="display: none">
 <p>
+A recent line of work asks: given a clustering optimization problem (like k-means or k-medians), how does the cost of the best explainable clustering compare to that of the best clustering? 
+We consider the model where a clustering is called explainable if it can be defined by a tree of axis-parallel cuts. Building on a recent sequence of works, we pin down the optimal price of explainability 
+for k-median clustering, and also improve on existing results for k-means clustering. In this talk, I will discuss some of these results (both ours and prior results), the techniques underlying them, 
+and point out some of the open questions in the area. 
+</br></br>
+This talk is based on this paper (<a href="https://arxiv.org/abs/2304.09743">https://arxiv.org/abs/2304.09743</a>) with Madhusudhan Pittu (CMU), Ola Svensson (EPFL), and Rachel Yuan (CMU).
 </p>
 </div>
 </div>
@@ -260,11 +266,15 @@
 <div class="row my-3">
 <div class="col-2">13:35 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://sites.google.com/view/slobodan-mitrovic/home">Slobodan Mitrovi&cacute;</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://sites.google.com/view/slobodan-mitrovic/home">Slobodan Mitrovi&cacute;</a>: Computing Graph Cuts Privately</span>
 [<a href="javascript:toggle('SM')">Abstract</a>]
 <div id="SM" style="display: none">
 <p>
-
+With the increasing availability of publicly shared statistics derived from private datasets, safeguarding users' personal information has become crucial. Differential privacy (DP) 
+has emerged as a widely adopted framework for quantifying the level of individual privacy an algorithm preserves.
+</br></br>
+Over the past decade, numerous fundamental algorithms have been studied within the context of DP. This presentation will focus on 
+recent advances in the differentially private computation of graph cuts. We will also touch on multiple interesting open problems in this area of research.
 </p>
 </div>
 </div>
@@ -324,11 +334,27 @@
 <div class="row my-3">
 <div class="col-2">16:05 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://www.cs.columbia.edu/~rocco/">Rocco Servedio</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://www.cs.columbia.edu/~rocco/">Rocco Servedio</a>: Is Nasty Noise Actually Harder than Malicious Noise?</span>
 [<a href="javascript:toggle('RS')">Abstract</a>]
 <div id="RS" style="display: none">  
 <p>
-
+We consider the relative abilities and limitations of computationally efficient algorithms for learning in the presence of noise, under two well-studied and challenging adversarial noise models for learning Boolean functions:
+</br>
+</br>
+*malicious noise, in which an adversary can arbitrarily corrupt a random subset of examples given to the learner; and
+</br>
+*nasty noise, in which an adversary can arbitrarily corrupt an adversarially chosen subset of examples given to the learner.
+</br>
+</br>
+We consider both the distribution-independent and fixed-distribution settings. Our main results highlight a dramatic difference between these two settings:
+</br>
+1. For distribution-independent learning, we prove a strong equivalence between the two noise models: If a class C of functions is efficiently learnable in the presence of η-rate malicious noise, then it is also efficiently learnable in the presence of η-rate nasty noise.
+</br>
+2. In sharp contrast, for the fixed-distribution setting we show an arbitrarily large separation: Under a standard cryptographic assumption, for any arbitrarily large value r there exists a concept class for which there is a ratio of r between the rate η_malicious of 
+malicious noise that polynomial-time learning algorithms can tolerate, versus the rate η_nasty of nasty noise that such learning algorithms can tolerate.
+</br>
+</br>
+Joint work with Guy Blanc, Yizhi Huang, and Tal Malkin.
 </p> 
 </div>
 </div>
@@ -408,11 +434,16 @@
 <div class="row my-3">
 <div class="col-2">13:10 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://web.eecs.umich.edu/~nswein/">Nicole Wein</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://web.eecs.umich.edu/~nswein/">Nicole Wein</a>: Covering Approximate Shortest Paths with DAGs</span>
 [<a href="javascript:toggle('NW')">Abstract</a>]
 <div id="NW" style="display: none">
 <p>
-
+I will talk about the new notion of a "DAG cover" that we define. It is a directed analog of a tree cover, 
+which is closely related to a probabilistic tree embedding. A DAG cover of a general directed graph G is a 
+small collection of DAGs so that for all pairs of vertices s,t, some DAG in the collection provides low distortion for dist(s,t). 
+I will discuss upper and lower bounds for DAG covers in various parameter regimes, and pose some open problems.
+</br></br>
+Joint work with Sepehr Assadi and Gary Hoppenworth
 </p>
 </div>
 </div>
@@ -476,10 +507,18 @@
 <div class="row my-3">
 <div class="col-2">15:25 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://cs.uwaterloo.ca/~elena-g/">Elena Grigorescu</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://cs.uwaterloo.ca/~elena-g/">Elena Grigorescu</a>: Differential Privacy and Sublinear-Time are Incompatible Sometimes</span>
 [<a href="javascript:toggle('EG')">Abstract</a>]
 <div id="EG" style="display: none"> 
 <p>
+Differential privacy and sublinear algorithms have both been well-studied paradigms in big data analysis. Although recent works have shown the existence of differentially private 
+sublinear algorithms for many problems, little is known regarding hardness results on these algorithms. In this paper, we initiate the study of lower bounds for problems that 
+aim for both differentially-private and sublinear-time algorithms. Our main result is the incompatibility of both the desiderata in the general case. 
+In particular, we prove that a simple problem based on one-way marginals yields both a differentially-private algorithm, as well as a sublinear-time algorithm, 
+but does not admit a ``strictly'' sublinear-time algorithm that is also differentially private. 
+</br></br>
+Joint work with <a href="https://www.cs.purdue.edu/homes/jblocki/">Jeremiah Blocki</a>, <a href="https://hendrik-fichtenberger.de/">Hendrik Fichtenberger</a>, 
+<a href="https://tamalikamukherjee.com/">Tamalika Mukherjee</a>.
 </p>
 </div>
 </div>
@@ -509,10 +548,21 @@
 <div class="row my-3">
 <div class="col-2">16:30 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://jbrakensiek.github.io/">Josh Brakensiek</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://jbrakensiek.github.io/">Josh Brakensiek</a>: Redundancy Is All You Need (for Sparsification)</span>
 [<a href="javascript:toggle('JB')">Abstract</a>]
 <div id="JB" style="display: none">
 <p>
+The seminal work of Benczúr and Karger demonstrated cut sparsifiers of near-linear size, with several applications throughout theoretical computer science. Subsequent extensions have yielded sparsifiers for hypergraph cuts and more recently linear codes over Abelian groups. 
+A decade ago, Kogan and Krauthgamer asked about the sparsifiability of arbitrary constraint satisfaction problems (CSPs). For this question, a trivial lower bound is the size of a non-redundant CSP instance, which admits, for each constraint, an assignment satisfying only 
+that constraint (so that no constraint can be dropped by the sparsifier). For graph cuts, spanning trees are non-redundant instances.
+</br></br>
+Our main result is that redundant clauses are sufficient for sparsification: for any CSP predicate R, every unweighted instance of CSP(R) has a sparsifier of size at most its non-redundancy (up to polylog factors). For weighted instances, we similarly pin down the sparsifiability 
+to the so-called chain length of the predicate. These results precisely determine the extent to which any CSP can be sparsified. A key technical ingredient in our work is a novel application of the entropy method from Gilmer's recent breakthrough on the union-closed sets conjecture.
+</br></br>
+As an immediate consequence of our main theorem, a number of results in the non-redundancy literature immediately extend to CSP sparsification. We also contribute new techniques for understanding the non-redundancy of CSP predicates. In particular, we give an explicit family of 
+predicates whose non-redundancy roughly corresponds to the structure of matching vector families in coding theory. By adapting methods from the matching vector codes literature, we are able to construct an explicit predicate whose non-redundancy has a non-integral exponent. 
+</br></br>
+Joint work with Venkatesan Guruswami.
 </p>
 </div>
 </div>
@@ -548,10 +598,24 @@
 <div class="row my-3">
 <div class="col-2">12:30 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://cs-people.bu.edu/sofya/">Sofya Raskhodnikova</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://cs-people.bu.edu/sofya/">Sofya Raskhodnikova</a>: Fully Dynamic Algorithms for Graphs with Edge Differential Privacy</span>
 [<a href="javascript:toggle('MB')">Abstract</a>]
 <div id="MB" style="display: none">
 <p>
+We study differentially private algorithms for analyzing graphs in the challenging setting of continual release with fully dynamic updates, where edges are inserted and deleted over time, 
+and the algorithm is required to update the solution at every time step. Previous work has presented differentially private algorithms for many graph problems that can handle insertions only or deletions only 
+(called partially dynamic algorithms) and obtained some hardness results for the fully dynamic setting. The only algorithms in the latter setting were for the edge count, given by Fichtenberger, Henzinger, and Ost (ESA '21), 
+and for releasing the values of all graph cuts, given by Fichtenberger, Henzinger, and Upadhyay (ICML '23). We provide the first differentially private and fully dynamic graph algorithms for several 
+other fundamental graph statistics (including the triangle count, the number of connected components, the size of the maximum matching, and the degree histogram), analyze their error, and show strong 
+lower bounds on the error for all algorithms in this setting. 
+</br></br>
+In the talk, we will discuss two variants of edge differential privacy for fully dynamic graph algorithms and our current understanding of the error achievable under both variants: event-level and item-level. 
+Under the former notion, two graph update sequences are considered neighboring  if, roughly speaking, they differ in at most one update; under the latter notion, they can differ only in updates pertaining to one edge. 
+Differential privacy requires that for any two neighboring inputs, the output distributions of the algorithm are close. We give upper and lower bounds on the error of both---event-level and item-level---fully dynamic algorithms 
+for several fundamental graph problems. No fully dynamic algorithms that are private at the item-level (the more stringent of the two notions) were known before. In the case of item-level privacy, for several problems, 
+our algorithms match our lower bounds.
+</br></br>
+Joint work with Teresa Anna Steiner
 </p>
 </div>
 </div>
@@ -637,10 +701,16 @@
 <div class="row my-3">
 <div class="col-2">16:05 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://maryamaliakbarpour.com/index.html">Maryam Aliakbarpour</a>: TBD</span> 
+<div class="col"><span class="talk-title"><a href="https://maryamaliakbarpour.com/index.html">Maryam Aliakbarpour</a>: Leveraging Predictions for Efficient Hypothesis Testing in Discrete Distributions</span> 
 [<a href="javascript:toggle('MA')">Abstract</a>]
 <div id="MA" style="display: none"> 
 <p>
+Prior knowledge—whether from historical data, domain expertise, or predictive models—can enhance statistical inference by reducing sample complexity. 
+We introduce a general framework for leveraging such predictions and apply it to hypothesis testing for discrete distributions.  In the standard setting, 
+optimal sample complexity bounds are known for identity, closeness, and uniformity testing. We show that access to a predicted distribution can reduce the required samples, 
+with gains determined by its total variation distance from the true distribution. Our algorithms are adaptive, adjusting to prediction accuracy without prior calibration, 
+and robust, never exceeding the standard sample complexity when predictions are uninformative. We establish information-theoretic lower bounds confirming optimality and 
+present experimental results demonstrating significant practical improvements.
 </p>
 </div>
 </div>
@@ -649,10 +719,19 @@
 <div class="row my-3">
 <div class="col-2">16:30 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://ccanonne.github.io/">Cl&eacute;ment Canonne</a>: TBD </span>
+<div class="col"><span class="talk-title"><a href="https://ccanonne.github.io/">Cl&eacute;ment Canonne</a>: Better Private Distribution Testing by Leveraging Unverified Auxiliary Data </span>
 [<a href="javascript:toggle('CC')">Abstract</a>]
 <div id="CC" style="display: none">
 <p>
+We extend the framework of augmented distribution testing (Aliakbarpour, Indyk, Rubinfeld, and Silwal, NeurIPS 2024) to the differentially private setting. 
+This captures scenarios where a data analyst must perform hypothesis testing tasks on sensitive data, but is able to leverage prior knowledge 
+(public, but possibly erroneous or untrusted) about the data distribution.
+</br></br>
+We design private algorithms in this augmented setting for three flagship distribution testing tasks, uniformity, identity, and closeness testing, 
+whose sample complexity smoothly scales with the claimed quality of the auxiliary information. We complement our algorithms with 
+information-theoretic lower bounds, showing that their sample complexity is optimal (up to logarithmic factors).
+</br></br>
+Joint work with Maryam Aliakbarpour, Arnav Burudgunte, and Ronitt Rubinfeld.
 </p>
 </div>
 </div>
