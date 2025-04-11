@@ -227,10 +227,26 @@ This talk is based on this paper (<a href="https://arxiv.org/abs/2304.09743">htt
 <div class="row my-3">
 <div class="col-2">12:30 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://mbraverm.princeton.edu/">Mark Braverman</a>: TBD</span> 
+<div class="col"><span class="talk-title"><a href="https://mbraverm.princeton.edu/">Mark Braverman</a>: Optimality of Frequency Moment Estimation</span> 
 [<a href="javascript:toggle('DW')">Abstract</a>]
 <div id="DW" style="display: none">
 <p>
+Estimating the second frequency moment of a stream up to (1
+± ε) multiplicative error requires at most O(log n / ε²) bits of
+space, due to a seminal result of Alon, Matias, and Szegedy. It is
+also known that at least Ω(log n + 1/ε²) space is needed.
+We prove a tight lower bound of Ω(log(nε²) / ε²) for all ε = Ω(1/√n).
+When ε > n^(-1/2 + c), where c > 0, our lower bound matches the
+classic upper bound of AMS. For smaller values of ε, we also introduce
+a revised algorithm that improves the classic AMS bound and matches
+our lower bound.
+</br></br>
+Our lower bound also applies to the more general problem of p-th
+frequency moment estimation for the range of p in (1, 2], providing a
+tight bound in the only remaining range to settle the optimal space
+complexity of estimating frequency moments.
+</br></br>
+Based on a joint work with Or Zamir
 </p>
 </div>
 </div>
@@ -364,11 +380,27 @@ Joint work with Guy Blanc, Yizhi Huang, and Tal Malkin.
 <div class="row my-3">
 <div class="col-2">16:30 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>: The Quasi-polynomial Low-Degree Conjecture is False</span>
 [<a href="javascript:toggle('PK')">Abstract</a>]
 <div id="PK" style="display: none">
 <p>
-
+There is a growing body of work on proving hardness results for average-case optimization problems by bounding 
+the <i>low-degree likelihood ratio</i> (LDLR) --- a quantitative estimate of the closeness of low-degree moments --- between a null distribution 
+and a related planted distribution. Such hardness results are now ubiquitous for foundational problems in algorithms, statistics, and cryptography.
+</br></br>
+This line of work is supported by the low-degree conjecture of Hopkins, which postulates that a vanishing degree-D LDLR implies 
+the absence of any noise-tolerant distinguishing algorithm with runtime n^{\widetilde{O}(D)} whenever 1) the null distribution is 
+product on $\{0,1\}^{\binom{n}{k}}$, and 2) the planted distribution is permutation invariant, that is, invariant under any relabeling $[n] \rightarrow [n]$.
+</br></br>
+In this talk, I'll present our refutation of this conjecture. Specifically, we show that for all sufficiently small $\epsilon>0$ and 
+any $k\geq 2$, there is a permutation-invariant planted distribution on $\{0,1\}^{\binom{n}{k}}$ that has a vanishing degree-$n^{1-O(\epsilon)}$ 
+LDLR with respect to the uniform distribution on $\{0,1\}^{\binom{n}{k}}$ even as a $n^{O(\log^{1/(k-1)}(n))}$-time algorithm solves 
+the corresponding $\epsilon$-noisy distinguishing problem. Our construction relies on algorithms for list decoding for noisy polynomial interpolation in the high-error regime.
+</br></br>
+We also give another construction of a pair of planted and (a non-product) null distributions on $\R^{n \times n}$ with a 
+vanishing $n^{\Omega(1)}$-degree LDLR even as simply the largest eigenvalue serves as an efficient noise-tolerant distinguisher. 
+Our results suggest that while a vanishing LDLR bound may still be interpreted as evidence of hardness, developing a theory of average-case 
+complexity based on such heuristics requires a more careful approach. 
 </p>
 </div>
 </div>
@@ -408,11 +440,19 @@ Joint work with Guy Blanc, Yizhi Huang, and Tal Malkin.
 <div class="row my-3">
 <div class="col-2">12:30 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://www.cis.upenn.edu/~sanjeev/">Sanjeev Khanna</a>: TBD</span> 
+<div class="col"><span class="talk-title"><a href="https://www.cis.upenn.edu/~sanjeev/">Sanjeev Khanna</a>: Correlation Clustering and (De)Sparsification: Graph Sketches Can Match Classical Algorithms</span> 
 [<a href="javascript:toggle('SK')">Abstract</a>]
 <div id="SK" style="display: none">
 <p>
-
+Correlation clustering is a widely-used approach for clustering large data sets based only on pairwise similarity information. 
+In recent years, there has been a steady stream of better and better classical algorithms for approximating this problem. 
+Meanwhile, another line of research has focused on porting the classical advances to various sublinear algorithm models, including semi-streaming, 
+Massively Parallel Computation (MPC), and distributed computing. Yet, these latter works typically rely on 
+ad-hoc approaches that may not always keep up with advances in improved approximation ratios achieved by classical algorithms. 
+This raises the following natural question: can the gains made by classical algorithms for correlation clustering be ported over to 
+sublinear algorithms in a black-box manner? We answer this question in the affirmative via the paradigm of graph de-sparsification that may be of independent interest.
+</br></br>
+This is joint work with Sepehr Assadi and Aaron (Louie) Putterman.
 </p>
 </div>
 </div>
