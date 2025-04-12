@@ -267,11 +267,24 @@ Based on a joint work with Or Zamir
 <div class="row my-3">
 <div class="col-2">13:10 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="http://www.cs.cmu.edu/~dwoodruf/">David P. Woodruff</a>: TBD</span>  
+<div class="col"><span class="talk-title"><a href="http://www.cs.cmu.edu/~dwoodruf/">David P. Woodruff</a>: Lifting Linear Sketches: Optimal Bounds and Adversarial Robustness</span>  
 [<a href="javascript:toggle('SR')">Abstract</a>]
 <div id="SR" style="display: none">
 <p>
-
+We introduce a novel technique for ``lifting'' dimension lower bounds for linear sketches in the continuous setting to dimension lower bounds for 
+linear sketches with polynomially-bounded integer entries when the input is a polynomially-bounded integer vector. Using this technique, 
+we obtain the first optimal sketching lower bounds for discrete inputs in a data stream, for classical problems such as approximating t
+he frequency moments, estimating the operator norm, and compressed sensing. Additionally, we lift the adaptive attack of Hardt and Woodruff (STOC, 2013) 
+for breaking any real-valued linear sketch via a sequence of real-valued queries, and show how to obtain an attack on any integer-valued linear sketch using 
+integer-valued queries. This shows that there is no linear sketch in a data stream with insertions and deletions that is adversarially robust for approximating 
+any $L_p$ norm of the input. This resolves a central open question for adversarially robust streaming algorithms. To do so, we introduce a 
+new pre-processing technique of independent interest which, given an integer-valued linear sketch, increases the dimension of the sketch 
+by only a constant factor in order to make the orthogonal lattice to its row span smooth, enabling us to leverage results in lattice theory on 
+discrete Gaussian distributions and reason that efficient discrete sketches imply efficient continuous sketches. 
+Our work resolves open questions from the Banff '14 and '17 workshops on Communication Complexity and Applications, 
+as well as the STOC '21 and FOCS '23 workshops on adaptivity and robustness.
+</br></br>
+Based on joint work with Elena Gribelyuk, Honghao Lin, Huacheng Yu, and Samson Zhou.
 </p>
 </div>
 </div>
@@ -311,11 +324,23 @@ recent advances in the differentially private computation of graph cuts. We will
 <div class="row my-3">
 <div class="col-2">15:00 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>: TBD</span> 
+<div class="col"><span class="talk-title"><a href="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>: Expander Graphs and Optimally List-Decodable Codes</span> 
 [<a href="javascript:toggle('MT')">Abstract</a>]
 <div id="MT" style="display: none"> 
 <p>
-
+We construct a new family of explicit codes that are list decodable to capacity and achieve an optimal list size of  O(1/ϵ). 
+In contrast to existing explicit constructions of codes achieving list decoding capacity, our arguments do not rely on 
+algebraic structure but utilize simple combinatorial properties of expander graphs.
+</br></br>
+Our construction is based on a celebrated distance amplification procedure due to Alon, Edmonds, and Luby [FOCS'95], 
+which transforms any high-rate code into one with near-optimal rate-distance tradeoff. We generalize it to show that the same procedure can be used 
+to transform any high-rate code into one that achieves list decoding capacity. Our proof can be interpreted as a "local-to-global" phenomenon 
+for (a slight strengthening of) the generalized Singleton bound. 
+</br></br>
+As a corollary of our result, we also obtain the first explicit construction of LDPC codes achieving list decoding capacity, 
+and in fact arbitrarily close to the generalized Singleton bound.
+</br></br>
+Based on joint work with Fernando Granha Jeronimo, Tushant Mittal, and Shashank Srivastava.
 </p>
 </div>
 </div>
@@ -805,7 +830,6 @@ Monday Poster Session:
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://student.cs.uwaterloo.ca/~jsundare/">Janani Sundaresan</a> (University of Waterloo) </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://jusyc.github.io/">Justin Y. Chen</a> (MIT): <a href="https://waldo-workshop.github.io/2025/P06--poster.pdf">Statistical-Computational Trade-offs for Hypothesis Selection</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://www.kstavrop.com/">Konstantinos Stavropoulos</a> (UT Austin): <a href="https://waldo-workshop.github.io/2025/P07--poster.pdf">Efficiently Certifiable Guarantees for Learning with Distribution Shift</a> </li>
-<li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://web.eecs.umich.edu/~lilyxy/">Lily Wang</a> (Michigan) </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://lydiazakynthinou.com/">Lydia Zakynthinou</a> (UC Berkeley): <a href="https://waldo-workshop.github.io/2025/P09--poster.pdf">Dimension-free Private Mean Estimation</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://nmenand.github.io/">Nicolas Menand</a> (UPenn): Streaming and Massively Parallel Algorithms for Euclidean Max-Cut </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://prashantianderson.github.io/">Prashanti Anderson</a> (MIT): Sample-Optimal Private Regression in Polynomial Time </li>
@@ -817,9 +841,8 @@ Monday Poster Session:
 Wednesday Poster Session:
 <ul class="list-group list-group-flush">
 		  
-<li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://almaghafari.github.io/">Alma Ghafari</a> (Northeastern) </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://abrandenberger.github.io/">Anna Brandenberger</a> (MIT) </li>
-<li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://sites.google.com/view/chen-wang/home">Chen Wang</a> (Rice and Texas A&#38;M University) </li>
+<li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://sites.google.com/view/chen-wang/home">Chen Wang</a> (Rice and Texas A&#38;M University): <a href="https://waldo-workshop.github.io/2025/P18--poster.pdf">On the Price of Differential Privacy for Hierarchical Clustering</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://debanujnayak.github.io/">Debanuj Nayak</a> (Boston University): Differentially Private Multi-Sampling from Distributions </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://dyukha.github.io/">Dmitrii Avdiukhin</a> (Northwestern): <a href="https://waldo-workshop.github.io/2025/P20--poster.pdf">Embedding Dimension of Contrastive Learning and <i>k</i>-Nearest Neighbors</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://felix-zhou.com/">Felix Zhou</a> (Yale): <a href="https://waldo-workshop.github.io/2025/P21--poster.pdf">Private Training & Synthetic Data via DP Clustering</a> </li>
