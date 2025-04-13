@@ -703,11 +703,24 @@ This lower bound is tight as it matches the algorithm given by Feldman, Monemiza
 <div class="row my-3">
 <div class="col-2">15:00 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://www.di.ens.fr/~vcohen/">Vincent Cohen-Addad</a>: Solving the Correlation Cluster LP in Sublinear Time</span>
 [<a href="javascript:toggle('VC')">Abstract</a>]
 <div id="VC" style="display: none">
 <p>
-
+Correlation Clustering is a fundamental and widely-studied problem in unsupervised learning and data mining. The input is a graph and the goal is to construct a
+clustering minimizing the number of inter-cluster edges plus the number of missing intra-cluster edges.
+</br></br>
+[CCL+24] introduced the cluster LP for Correlation Clustering, which they argued captures the problem much more succinctly than previous linear programming formulations. 
+However, the cluster LP has exponential size, with a variable for every possible set of vertices in the input graph. Nevertheless, [CCL+24] showed how to find a feasible
+solution for the cluster LP in time O(npoly(1/ε)) with objective value at most (1 + ε) times the value of an optimal solution for the respective Correlation Clustering instance. 
+Furthermore, they showed how to round a solution to the cluster LP, yielding a (1.437 + ε)-approximation algorithm for the Correlation Clustering problem.
+</br></br>
+The main technical result of this paper is a new approach to find a feasible solution for the cluster LP with objective value at most (1 + ε) of the optimum in time ̃O(2poly(1/ε)n),
+where n is the number of vertices in the graph. We also show how to implement the rounding within the same time bounds, thus achieving a fast (1.437 + ε)-approximation
+algorithm for the Correlation Clustering problem. This bridges the gap between state-of-the-art methods for approximating Correlation Clustering and the recent focus on fast
+algorithms.
+</br></br>
+Joint work with Nairen Cao, Euiwoong Lee, Shi Li, David Rasmussen Lolck, Alantha Newman, Mikkel Thorup, Lukas Vogl. Shuyi Yan, Hanwen Zhang
 </p>
 </div>
 </div>
@@ -857,10 +870,16 @@ Joint work with Teresa Anna Steiner
 <div class="row my-3">
 <div class="col-2">13:35 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://sites.google.com/view/sumegha-garg/home">Sumegha Garg</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://sites.google.com/view/sumegha-garg/home">Sumegha Garg</a>: A New Information Complexity Measure for Multi-Pass Streaming Algorithms</span>
 [<a href="javascript:toggle('SG')">Abstract</a>]
 <div id="SG" style="display: none"> 
 <p>
+In this talk, we will introduce a new notion of information complexity for multi-pass streaming problems, and use it to prove memory lower bounds for the coin problem. 
+In the coin problem, one sees a stream of 𝑛 i.i.d. uniform bits and one would like to compute the majority (or sum) with constant advantage. 
+We show that any constant pass algorithm must use Ω(log 𝑛) bits of memory. This information complexity notion is also useful to prove tight 
+space complexity for the needle problem, which in turn implies tight bounds for the problem of approximating higher frequency moments in a data stream.
+</br></br>
+Joint work with Mark Braverman, Qian Li, Shuo Wang, David P. Woodruff and Jiapeng Zhang.
 </p>
 </div>
 </div>
