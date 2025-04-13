@@ -909,10 +909,27 @@ Joint work with Mark Braverman, Qian Li, Shuo Wang, David P. Woodruff and Jiapen
 <div class="row my-3">
 <div class="col-2">15:25 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://www.cs.princeton.edu/~hy2/">Huacheng Yu</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://www.cs.princeton.edu/~hy2/">Huacheng Yu</a>: Near-Optimal Relative Error Streaming Quantile Estimation via Elastic Compactors</span>
 [<a href="javascript:toggle('HY')">Abstract</a>]
 <div id="HY" style="display: none"> 
 <p>
+Computing the approximate quantiles or ranks of a stream is a fundamental task in data monitoring. Given a stream of elements x_1, x_2, ..., x_n and a query x, 
+a relative-error quantile estimation algorithm can estimate the rank of x with respect to the stream, up to a multiplicative (1 +- eps) * rank(x) error. 
+Notably, this requires the sketch to obtain more precise estimates for the ranks of elements on the tails of the distribution, as compared to the 
+additive +- eps n error regime. This is particularly favorable for some practical applications, such as anomaly detection.
+</br></br>
+Previously, the best known algorithms for relative error achieved space O(eps^-1 log^1.5(eps n)) (Cormode, Karnin, Liberty, Thaler, Vesel`y, 2021) and 
+O(eps^-2 log(eps n)) (Zhang, Lin, Xu, Korn, Wang, 2006). In this work, we present a nearly-optimal streaming algorithm for the relative-error 
+quantile estimation problem using O~(eps^-1 log(eps n)) space, which almost matches the trivial offline Omega(eps^-1 log(eps n)) space lower bound.
+</br></br>
+To surpass the eps^-1 log^1.5(eps n) barrier of the previous approach, our algorithm crucially relies on a new data structure, called the elastic compactor, 
+which can be dynamically resized over the course of the stream. Interestingly, we design a space allocation scheme which adaptively allocates space to 
+each compactor based on the "hardness" of the input stream. This approach allows us to avoid using the maximal space simultaneously for every compactor 
+and facilitates the improvement in the total space complexity. Along the way, we also propose and study a new problem called the Top Quantiles Problem, 
+which only requires the sketch to provide estimates for the ranks of elements in a fixed-length tail of the distribution. 
+This problem serves as an important subproblem in our algorithm, though it is also an interesting problem of its own right.
+</br></br>
+Joint work with Elena Gribelyuk, Pachara Sawettamalya, Hongxun Wu. 
 </p>
 </div>
 </div>
@@ -993,7 +1010,7 @@ Wednesday Poster Session:
 <ul class="list-group list-group-flush">
 		  
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://abrandenberger.github.io/">Anna Brandenberger</a> (MIT) </li>
-<li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://sites.google.com/view/chen-wang/home">Chen Wang</a> (Rice and Texas A&#38;M University): <a href="https://waldo-workshop.github.io/2025/P18--poster.pdf">On the Price of Differential Privacy for Hierarchical Clustering</a> </li>
+<li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://scholar.google.com/citations?user=QPaVr9QAAAAJ">Chengyuan Deng</a> (Rutgers University): <a href="https://waldo-workshop.github.io/2025/P18--poster.pdf">On the Price of Differential Privacy for Hierarchical Clustering</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://debanujnayak.github.io/">Debanuj Nayak</a> (Boston University): <a href="https://waldo-workshop.github.io/2025/P19--poster.pdf">Differentially Private Multi-Sampling from Distributions</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://dyukha.github.io/">Dmitrii Avdiukhin</a> (Northwestern): <a href="https://waldo-workshop.github.io/2025/P20--poster.pdf">Embedding Dimension of Contrastive Learning and <i>k</i>-Nearest Neighbors</a> </li>
 <li class="list-group-item"><i class="bi bi-caret-right"></i> <a href="https://felix-zhou.com/">Felix Zhou</a> (Yale): <a href="https://waldo-workshop.github.io/2025/P21--poster.pdf">Private Training & Synthetic Data via DP Clustering</a> </li>
