@@ -52,6 +52,37 @@
       .talk-title {
       font-family: 'Roboto Slab', serif;
       }
+
+      table {
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+      }
+
+      th, td {
+        border: 1px solid #333;
+        padding: 8px 12px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #f3f3f3;
+      }
+
+      td {
+/*        background-color: #E1EEEE; */
+      }
+
+      col:nth-child(even) {
+/*        background:#ffecb8;*/
+      }
+
+      caption {
+        caption-side: top;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
     </style>
 
     <title>Workshop on Algorithms for Large Data (Online) 2025</title>
@@ -184,8 +215,107 @@
 		   <h3 id="lk-schedule" class="h-title">Schedule</h3>
           <span class="h-line">Schedule</span>
 </br>
-<img src="https://waldo-workshop.github.io/2025/schedule.jpg" width="700">
-</br>
+<!-- <img src="https://waldo-workshop.github.io/2025/schedule.jpg" width="700"> -->
+
+See below for talk details, including abstracts. 
+
+<table>
+  <colgroup>
+    <col>
+    <col>
+    <col>
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Time (pm ET)</th>
+      <th>Day 1 (Mon Apr 14)</th>
+      <th>Day 2 (Tue Apr 15)</th>
+      <th>Day 3 (Wed Apr 16)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12:00-12:05</td>
+      <td style="background:#ffecb8;"><strong>ACM Remarks</strong></td>
+      <td style="background:#ffecb8;"><strong>Steering Committee</strong></td>
+      <td style="background:#ffecb8;"><strong>Organizers</strong></td>
+    </tr>
+    <tr>
+      <td>12:05-12:30</td>
+      <td>Anupam Gupta</td>
+      <td>Michael Kapralov</td>
+      <td>Ronitt Rubinfeld</td>
+    </tr>
+    <tr>
+      <td>12:30-12:55</td>
+      <td>Mark Braverman</td>
+      <td>Sanjeev Khanna</td>
+      <td>Sofya Raskhodnikova</td>
+    </tr>
+    <tr>
+      <td>12:55-13:10</td>
+      <td style="background:#ffecb8;"><strong>Coffee Break</strong></td>
+      <td style="background:#ffecb8;"><strong>Coffee Break</strong></td>
+      <td style="background:#ffecb8;"><strong>Coffee Break</strong></td>
+    </tr>
+    <tr>
+      <td>13:10-13:35</td>
+      <td>David Woodruff</td>
+      <td>Nicole Wein</td>
+      <td>Piotr Indyk</td>
+    </tr>
+    <tr>
+      <td>13:35-14:00</td>
+      <td>Slobodan Mitrović</td>
+      <td>Karthik C.S.</td>
+      <td>Sumegha Garg</td>
+    </tr>
+    <tr>
+      <td>14:00-14:25</td>
+      <td style="background:#A5D8DD;"><strong>Poster Session</strong></td>
+      <td>Soheil Behnezhad</td>
+      <td style="background:#A5D8DD;"><strong>Poster Session</strong></td>
+    </tr>
+    <tr>
+      <td>14:25-15:00</td>
+      <td style="background:#A5D8DD;"><strong>Poster Session</strong></td>
+      <td style="background:#ffecb8;"><strong>Lunch</strong></td>
+      <td style="background:#A5D8DD;"><strong>Poster Session</strong></td>
+    </tr>
+    <tr>
+      <td>15:00-15:25</td>
+      <td>Madhur Tulsiani</td>
+      <td>Vincent Cohen-Addad</td>
+      <td>Sepehr Assadi</td>
+    </tr>
+    <tr>
+      <td>15:25-15:50</td>
+      <td>Meghal Gupta</td>
+      <td>Elena Grigorescu</td>
+      <td>Huacheng Yu</td>
+    </tr>
+    <tr>
+      <td>15:50-16:05</td>
+      <td style="background:#ffecb8;"><strong>Coffee Break</strong></td>
+      <td style="background:#ffecb8;"><strong>Coffee Break</strong></td>
+      <td style="background:#ffecb8;"><strong>Coffee Break</strong></td>
+    </tr>
+    <tr>
+      <td>16:05-16:30</td>
+      <td>Rocco Servedio</td>
+      <td>Jane Lange</td>
+      <td>Maryam Aliakbarpour</td>
+    </tr>
+    <tr>
+      <td>16:30-16:55</td>
+      <td>Pravesh Kothari</td>
+      <td>Joshua Brakensiek</td>
+      <td>Clément Canonne</td>
+    </tr>
+  </tbody>
+</table>
+
           <ul class="nav nav-tabs" id="myTab" role="tablist">
 <li class="nav-item" role="presentation">
 <button class="nav-link active" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="true">Day 1 (April 14)</button>
@@ -318,7 +448,7 @@ recent advances in the differentially private computation of graph cuts. We will
 <div class="col-2">14:00 pm ET
 </div>
 <div class="col text-center">
-<span class="fs-3"><span class="talk-title">Monday Poster Session</span> <small class="text-muted"></small></span>
+<span class="fs-3"><span class="talk-title">Monday <strong>Poster Session</strong></span> <small class="text-muted"></small></span>
 </div>
 </div>
 <hr />
@@ -741,7 +871,7 @@ Joint work with Teresa Anna Steiner
 <div class="col-2">14:00 pm ET
 </div>
 <div class="col text-center">
-<span class="fs-3"><span class="talk-title">Wednesday Poster Session</span> <small class="text-muted"></small></span>
+<span class="fs-3"><span class="talk-title">Wednesday <strong>Poster Session</strong></span> <small class="text-muted"></small></span>
 </div>
 </div>
 <hr />
