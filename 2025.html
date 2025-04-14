@@ -767,10 +767,21 @@ Joint work with <a href="https://www.cs.purdue.edu/homes/jblocki/">Jeremiah Bloc
 <div class="row my-3">
 <div class="col-2">16:05 pm ET
 </div>
-<div class="col"><span class="talk-title"> <a href="https://people.csail.mit.edu/jlange/">Jane Lange</a>: TBD</span> 
+<div class="col"><span class="talk-title"> <a href="https://people.csail.mit.edu/jlange/">Jane Lange</a>: Lifting Uniform Learners via Distributional Decomposition</span> 
 [<a href="javascript:toggle('JL')">Abstract</a>]
 <div id="JL" style="display: none"> 
 <p>
+We show how any PAC learning algorithm that works under the uniform distribution can be transformed, in a blackbox fashion, into one that works under an 
+arbitrary and unknown distribution $\mathcal{D}$.  The efficiency of our transformation scales with the inherent complexity of $\mathcal{D}$, 
+running in $\poly(n, (md)^d)$ time for distributions over $\{\pm 1\}^n$ whose pmfs are computed by depth-$d$ decision trees, 
+where $m$ is the sample complexity of the original algorithm. For monotone distributions our transformation uses only samples from $\mathcal{D}$, 
+and for general ones it uses subcube conditioning samples.
+</br></br>
+A key technical ingredient is an algorithm which, given the aforementioned access to $\mathcal{D}$, produces an \emph{optimal} decision tree 
+decomposition of $\mathcal{D}$: an approximation of $\mathcal{D}$ as a mixture of uniform distributions over disjoint subcubes. 
+With this decomposition in hand, we run the uniform-distribution learner on each subcube and combine the hypotheses using the decision tree. 
+This algorithmic decomposition lemma also yields new algorithms for learning decision tree distributions with runtimes that exponentially 
+improve on the prior state of the art---results of independent interest in distribution learning. 
 </p>
 </div>
 </div>
