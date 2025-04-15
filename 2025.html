@@ -884,10 +884,23 @@ Joint work with Teresa Anna Steiner
 <div class="row my-3">
 <div class="col-2">13:10 pm ET
 </div>
-<div class="col"><span class="talk-title"><a href="https://people.csail.mit.edu/indyk/">Piotr Indyk</a>: TBD</span>
+<div class="col"><span class="talk-title"><a href="https://people.csail.mit.edu/indyk/">Piotr Indyk</a>: A Bi-metric Framework for Fast Similarity Search</span>
 [<a href="javascript:toggle('PI')">Abstract</a>]
 <div id="PI" style="display: none">
 <p>
+We propose a new ``bi-metric'' framework for designing nearest neighbor data structures. Our framework assumes two dissimilarity functions: 
+a ground-truth metric that is accurate but expensive to compute (e.g., a cross-encoder that runs a large neural network to compare two sentences), 
+and a proxy metric that is cheaper but less accurate (e.g., the Euclidean distance between feature vectors representing the sentences, possibly sketched). 
+In both theory and practice, we show how to construct data structures using only the proxy metric such that the query procedure achieves 
+the accuracy of the expensive metric, while only using a limited number of calls to both metrics.
+</br></br>
+Our theoretical results instantiate this framework for two popular nearest neighbor search algorithms: DiskANN and Cover Tree. 
+In both cases we show that, as long as the proxy metric used to construct the data structure approximates the ground-truth metric up to a bounded factor, 
+our data structure achieves arbitrarily good approximation guarantees with respect to the ground-truth metric. On the empirical side, we apply the 
+framework to the text retrieval problem with two dissimilarity functions evaluated by ML models with vastly different computational costs. 
+We observe that for almost all data sets in the MTEB benchmark, our approach achieves a considerably better accuracy-efficiency tradeoff than the alternatives, such as re-ranking.
+</br></br>
+Joint work with Haike Xu and Sandeep Silwal.
 </p>
 </div>
 </div>
